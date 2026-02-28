@@ -29,20 +29,20 @@
     <hr class="max-w-[1110px] mx-auto px-4 my-7 text-[#E6E7E9] border-1">
 
     <!-- main  -->
-    <main class="main max-w-[1110px] mx-auto px-4">
+    <main class="max-w-[1110px] mx-auto px-4">
         <section class="jobs mb-4">
             <div class="flex justify-between">
                 <h3 class="text-[#002C5C] font-bold text-2xl mb-6">Available Jobs</h3>
-                <p class="text-[#64748B]"><span>8</span> Jobs</p>
+                <p class="text-[#64748B]"><span id="total-jobs">0</span> Jobs</p>
             </div>
             
             <div class="flex gap-2">
-                <button id="all-filter-btn" class="bg-[#3B82F6] text-[#FFFFFF] rounded-sm px-5 py-2">All</button>
-                <button id="interview-filter-btn" class="bg-[#FFFFFF] text-[#64748B] rounded-sm px-5 py-2">Interview</button>
-                <button id="rejected-filter-btn" class="bg-[#FFFFFF] text-[#64748B] rounded-sm px-5 py-2">Rejected</button>
+                <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="bg-[#3B82F6] text-[#FFFFFF] rounded-sm px-5 py-2">All</button>
+                <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="bg-[#FFFFFF] text-[#64748B] rounded-sm px-5 py-2">Interview</button>
+                <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="bg-[#FFFFFF] text-[#64748B] rounded-sm px-5 py-2">Rejected</button>
             </div>
         </section>
-        <section class="filtered-section">
+        <section class="filtered-section hidden">
             <div class="filtered-job flex flex-col bg-[#FFFFFF] text-center mb-3 py-20 rounded-lg">
                 <img src="./jobs.png" alt="jobs" class="mx-auto">
                 <h3 class="text-[#002C5C] font-bold text-2xl mb-1">No jobs available</h3>
