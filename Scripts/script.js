@@ -133,7 +133,7 @@ mainContainer.addEventListener('click', function(event){
         console.log("delete btn clicked");
         const parentNode = event.target.closest('.card');
         const status = parentNode.querySelector('.status').innerText;
-        const companyName = parentNode.querySelector('.companyName').innerText;
+        const companyName = parentNode.querySelector('.company-name').innerText;
 
         parentNode.remove();
 
@@ -175,7 +175,7 @@ function renderInterview() {
                     </div>
                 </div>
                 <div>
-                    <button id="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                    <button><i class="delete-btn fa-regular fa-trash-can"></i></button>
                 </div>
                 
         `;
@@ -210,7 +210,7 @@ function renderRejected() {
                     </div>
                 </div>
                 <div>
-                    <button id="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+                    <button><i class="delete-btn fa-regular fa-trash-can"></i></button>
                 </div>
                 
         `;
